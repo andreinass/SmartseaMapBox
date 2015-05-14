@@ -1,5 +1,7 @@
 package com.smartsea.smartseamapbox;
 
+import android.app.Activity;
+import android.support.v7.app.ActionBar;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.view.Menu;
@@ -11,7 +13,7 @@ import com.mapbox.mapboxsdk.tileprovider.tilesource.MapboxTileLayer;
 import com.mapbox.mapboxsdk.views.MapView;
 
 
-public class MainActivity extends ActionBarActivity {
+public class MainActivity extends Activity {
 
     private MapView mv;
     private String currentMap;
@@ -26,7 +28,7 @@ public class MainActivity extends ActionBarActivity {
         mv.setMinZoomLevel(mv.getTileProvider().getMinimumZoomLevel());
         mv.setMaxZoomLevel(mv.getTileProvider().getMaximumZoomLevel());
         mv.setCenter(mv.getTileProvider().getCenterCoordinate());
-        mv.setZoom(0);
+        mv.setZoom(20);
         currentMap = getString(R.string.streetMapId);
         mv.setUserLocationEnabled(true);
 
@@ -40,6 +42,8 @@ public class MainActivity extends ActionBarActivity {
         mv.setScrollableAreaLimit(box);
         mv.setMinZoomLevel(mv.getTileProvider().getMinimumZoomLevel());
         mv.setMaxZoomLevel(mv.getTileProvider().getMaximumZoomLevel());
+
+
 
     }
 
