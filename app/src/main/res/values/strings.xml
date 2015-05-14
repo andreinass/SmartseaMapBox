@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">SmartseaMapBox</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="mapbox_api">sk.eyJ1Ijoic21hcnRzZWEiLCJhIjoiQ2lCQnlVQSJ9.7JPNzr5oQ-58IfxZn1fwSQ</string>
+    <string name="streetMapId">smartsea.d500e23d</string>
+
+</resources>
